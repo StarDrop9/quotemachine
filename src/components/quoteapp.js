@@ -46,7 +46,7 @@ Though seeing, they do not see; though hearing, they do not hear or understand.<
           </div>
           <div className="buttons">
              <a id="tweet-quote" className="tweetbutton" onClick={myHandleClick} href={"https://twitter.com/intent/tweet?hashtags="+{}} target="_blank" rel="noopener noreferrer"> <i className="fa fa-twitter"></i></a>
-            <button id="new-quote" className="btn btn-primary" onClick = {myHandleClick} >New Quote</button>
+            <button id="new-quote" className="btnx" onClick = {myHandleClick} >New Quote</button>
           </div>
         </div>
         <div className="footer"> Quote Machine by <a href="https://github.com/StarDrop9/quotemachine"> KPSDev.org </a></div>

@@ -65,3 +65,58 @@ a:visited {
         font-size:.8em; 
         text-align:right;
       } 
+
+
+      .buttons{
+        width:450px;
+        display: block;
+        /* background-color:rgb(122, 132, 125); */
+      }
+
+      .tweetbutton{
+        width:50px; 
+        margin:auto;
+        height:30px;
+         border:none;
+         border-radius:10%;
+         border:rgb(118, 117, 117) 1px solid;
+         color:rgb(226, 15, 15);
+         background-color:rgb(19, 112, 243);
+         outline:none;
+         font-size:0.7em;
+         text-align:center;
+         padding: 2px 2px 2px 2px;
+         margin-top:15px;
+         cursor:pointer;
+         opacity:0.9;
+         float:left;
+      }
+
+     .tweetbutton:hover{
+      background-color: rgb(35, 171, 240);
+      border:rgb(10, 9, 9) 1px solid; 
+    }
+      
+ #new-quote {
+         width:110px; 
+         margin:auto;
+        /* display:block; */
+          height:35px;
+          border:rgb(118, 117, 117) 1px solid;
+          border-radius:10%;
+          color:#fff;
+          background-color:rgb(19, 112, 243);
+          outline:none;
+          font-size:0.5em;
+          text-align:center;
+          padding: 5px 10px 3px 10px;
+          margin-top:15px;
+          cursor:pointer;
+          opacity:0.9;
+          float: right;
+      }
+
+      #new-quote:hover {
+        background-color: rgb(35, 171, 240);
+        border:rgb(10, 9, 9) 1px solid; 
+      }
