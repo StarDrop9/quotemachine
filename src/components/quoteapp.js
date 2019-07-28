@@ -38,10 +38,11 @@ function Quoteapp() {
         <div id="wrapper">
         <div id="quote-box">
           <div className="quote-text">
-            <i className="quote"><span><i id="text" className="fa fa-quote-left" aria-hidden="true">Now is the time</i></span></i>
+            <i className="quote"><span><i id="text" className="fa fa-quote-left" aria-hidden="true">The knowledge of the secrets of the kingdom of heaven has been given to you, but not to them. Whoever has will be given more, and he will have an abundance. Whoever does not have, even what he has will be taken from him. This is why I speak to them in parables: 
+Though seeing, they do not see; though hearing, they do not hear or understand.</i></span></i>
           </div>
           <div className="quote-author">
-             <span id="author">_KPS</span>
+             <span id="author">Jesus</span>
           </div>
           <div className="buttons">
              <a id="tweet-quote" className="tweetbutton" onClick={myHandleClick} href={"https://twitter.com/intent/tweet?hashtags="+{}} target="_blank" rel="noopener noreferrer"> <i className="fa fa-twitter"></i></a>
