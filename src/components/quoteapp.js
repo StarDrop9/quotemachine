@@ -2,11 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './quoteapp.css';
 
-
-// eslint-disable-next-line
 const API = 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json'
-var randomNum = 0
-
+var randomNum = 1
 
 function Quoteapp() {
   const [data, setData] = useState({ quotes: [] });
@@ -23,7 +20,6 @@ function Quoteapp() {
 
  const myHandleClick = (e) => handleClick(e)
 
-
  function handleClick(e){
         if(e.target.getAttribute("id") === "new-quote"){
           randomNum = (Math.floor(Math.random() * data.length) || 0 )
@@ -36,20 +32,19 @@ function Quoteapp() {
             text.innerText = x.quote;
             author.innerText = "_"+ x.author;
              }
-      }   
-      
+       }     
  
  return (
         <div id="wrapper">
         <div id="quote-box">
           <div className="quote-text">
-            <i className="quote"><span id="text"></span></i>
+            <i className="quote"><span><i id="text" className="fa fa-quote-left" aria-hidden="true">Now is the time</i></span></i>
           </div>
           <div className="quote-author">
-             <span id="author"></span>
+             <span id="author">_KPS</span>
           </div>
           <div className="buttons">
-             <a id="tweet-quote" className="button" onClick={myHandleClick} href={"https://twitter.com/intent/tweet?hashtags=Hello"} target="_blank" rel="noopener noreferrer"> <i className="fa fa-twitter"></i></a>
+             <a id="tweet-quote" className="tweetbutton" onClick={myHandleClick} href={"https://twitter.com/intent/tweet?hashtags="+{}} target="_blank" rel="noopener noreferrer"> <i className="fa fa-twitter"></i></a>
             <button id="new-quote" className="btn btn-primary" onClick = {myHandleClick} >New Quote</button>
           </div>
         </div>
@@ -58,12 +53,4 @@ function Quoteapp() {
       );
     };
  
-
-
-
-
-
-
-
-
  export default Quoteapp;
