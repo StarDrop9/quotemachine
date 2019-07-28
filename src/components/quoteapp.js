@@ -21,13 +21,6 @@ function Quoteapp() {
             fetchData();
       }, []);
 
-// randomNum = (Math.floor(Math.random() * data.length) || 0 );
- // console.log (randomNum)
-// var x = data[randomNum]
- // console.log(x) 
- //if (typeof x === 'object'){console.log(x.quote)}
- //if (typeof x === 'object'){console.log(x.author)}
- 
  const myHandleClick = (e) => handleClick(e)
 
 
@@ -42,12 +35,7 @@ function Quoteapp() {
             let author = document.getElementById("author");
             text.innerText = x.quote;
             author.innerText = "_"+ x.author;
-        //   } else if (e.target.getAttribute("id") === "tweet-quote" && x.quote === "") {
-        //  // alert("Hello")
-        // //  var quote = x.quote
-        // //  var author = x.author
-        //   
-      }
+             }
       }   
       
  
@@ -61,17 +49,8 @@ function Quoteapp() {
              <span id="author"></span>
           </div>
           <div className="buttons">
-           {/* eslint-disable-next-line */}
-            {/* <a  href="twitter.com/intent/tweet" className="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
-              <i className="fa fa-twitter"></i>
-            </a> */}
-            <a id="tweet-quote" className="button" onClick={myHandleClick} href={"https://twitter.com/intent/tweet?hashtags=Hello"} target="_blank" rel="noopener noreferrer"> <i className="fa fa-twitter"></i></a>
-             {/* eslint-disable-next-line */}
-            {/* <a className="button" id="tumblr-quote" title="Post this quote on tumblr!" target="_blank">
-              <i className="fa fa-tumblr"></i>
-            </a> */}
+             <a id="tweet-quote" className="button" onClick={myHandleClick} href={"https://twitter.com/intent/tweet?hashtags=Hello"} target="_blank" rel="noopener noreferrer"> <i className="fa fa-twitter"></i></a>
             <button id="new-quote" className="btn btn-primary" onClick = {myHandleClick} >New Quote</button>
-            {/* <button className="button" id="new-quote"      >New quote</button> */}
           </div>
         </div>
         <div className="footer"> Quote Machine by <a href="https://github.com/StarDrop9/quotemachine"> KPSDev.org </a></div>
